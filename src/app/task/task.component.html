@@ -1,0 +1,9 @@
+<section id="task">
+  <div class="container" *ngFor="let c of categories;">
+    <h1>{{c.name}}</h1>
+    <div class="content" *ngFor="let t of tasks">
+      <h3 *ngIf="c.name == t.child">Task {{t.id}}</h3>
+      <p *ngIf="c.name == t.child">{{t.description}}</p>
+    </div>
+  </div>
+</section>
