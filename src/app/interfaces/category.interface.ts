@@ -16,3 +16,4 @@ export interface IDataJSON {
   message: string;
   data: IData;
 }
+ 
