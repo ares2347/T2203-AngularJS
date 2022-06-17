@@ -11,16 +11,23 @@ import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
 import {RouterModule, Routes} from "@angular/router";
 import {Assignment1Component} from "./assignment1/assignment1.component";
+import {TaskComponent} from "./task/task.component";
 
 const appRoutes: Routes = [
   {
-    path: '', component: ClassroomComponent
+    path: 'lop-hoc', component: ClassroomComponent
   },
   {
     path: 'san-pham', component: ProductsComponent
   },
   {
     path: 'thoi-tiet', component: WeatherComponent
+  },
+  {
+    path: 'assignment-1', component: Assignment1Component
+  },
+  {
+    path:'assignment-2', component: TaskComponent
   }
 ];
 
@@ -31,7 +38,8 @@ const appRoutes: Routes = [
     ClassroomComponent,
     ProductsComponent,ProductComponent,
     WeatherComponent,
-    Assignment1Component
+    Assignment1Component,
+    TaskComponent,
   ],
   imports: [
     BrowserModule,
