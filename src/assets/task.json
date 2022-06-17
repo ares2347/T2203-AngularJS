@@ -37,7 +37,7 @@
         "description": "This is description for task 4",
         "child": "In Progress"
       },
-      {
+      { 
         "id": 5,
         "description": "This is description for task 5",
         "child": "In Review"
